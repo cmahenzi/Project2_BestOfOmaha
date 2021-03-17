@@ -1,0 +1,8 @@
+<aura:component controller="RestaurantInfo" implements="forceCommunity:availableForAllPageTypes" access="global">
+    <aura:attribute name="recordId" type="Id" />
+	<aura:attribute name="Restaurant_Info__c" type="Object" />
+	<aura:attribute name="Columns" type="List" />
+	<aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+   <lightning:datatable data="{!v.Restaurant_Info__c}" columns="{! v.Columns }" keyField="Id" hideCheckboxColumn="true"/>
+
+</aura:component>

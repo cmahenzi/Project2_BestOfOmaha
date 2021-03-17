@@ -1,0 +1,7 @@
+<apex:page standardController="Account">
+    <apex:outputLink value="https://www.google.com/search" >
+    	Search for Account
+        <apex:param name="q"  value="{!account.name}"/>
+    </apex:outputLink>
+    
+</apex:page>

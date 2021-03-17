@@ -1,0 +1,24 @@
+<aura:component controller="RestaurantInfo" implements="forceCommunity:availableForAllPageTypes" access="global">
+    <aura:attribute name="restaurantInfo" type="Restaurant_Info__c[]"/>
+    <c:BestREstaurant1   Restaurant_Info__c = "{!v.restaurantInfo}"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+   <!-- <lightning:tabset>
+        <lightning:tab label="Restaurant">
+            
+        
+        </lightning:tab>
+        <lightning:tab label="Order">
+            
+        
+        </lightning:tab>
+        <lightning:tab label="Support">
+            
+        
+        </lightning:tab>
+        
+             
+    </lightning:tabset> -->
+    
+    
+</aura:component>
